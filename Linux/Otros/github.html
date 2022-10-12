@@ -19,11 +19,27 @@
         </div>
         <div id="titulo">Usar git con github</div>
         <div class="texto">
-            # Para crear un nuevo repositorio en github:<br>
-            # Crear el directorio que queramos
+            # Primero es necesario tener git instalado y una cuenta en
+            <a href="https://github.com">github</a><br><br>
+            # Crear configuraciones globales para git en la computadora<br><br>
+            # Identificarse
             <code>
-                mkdir ~/DireccionDeseada/NombreDelDirectorio
+                git config --global user.name "Tu username"<br>
+                git config --global user.name "Tu username"
             </code>
+            # Seleccionar vscode como el editor
+            <code>
+                git config --global core.editor "code --wait"
+            </code>
+            # Configurar el salto de linea para Linux
+            <code>
+                git config --global core.autocrlf input
+            </code>
+            # Ubicarnos en el directorio que deseamos usar como repositorio, ya
+            sea seleccionando uno ya existente, creando uno nuevo o descargando uno de
+            github con:
+            <code>git clone https://direcciondelrepositorio.com</code>
+            # 
         </div>
     </article>
     <footer class="space">
