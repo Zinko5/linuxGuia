@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../CSS/stlinux.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacion-app-menu.html">Instalacion de Programas</a> >
+            <a href="windows.html">Guia de instalacion de programas o juegos de Windows</a>
+        </div>
+        <div id="titulo">Programas o juegos de Windows</div>
+        <div class="texto">
+            Para instalar programas o juegos nativos de Windows en Linux, primero necesitamos Wine, tambien
+            Lutris es util para ordenarlos y arrancarlos<br><br>
+            Primero debemos descargar los archivos del programa Windows y despues seleccionar o crear la carpeta donde queremos 
+            que este el programa en Linux (ej. "UBICACION_DE_LA_CARPETA_LINUX")<br><br>
+            # Crear prefix
+            <code>
+                WINEPREFIX="UBICACION_DE_LA_CARPETA_LINUX" wine wineboot
+            </code>
+            # Abrir una terminal en la carpeta en donde están los archivos Windows del programa y poner
+            <code>
+                WINEPREFIX="UBICACION_DE_LA_CARPETA_LINUX" wine NOMBRE_DEL_ARCHIVO.exe
+            </code>
+            # Instalar el programa usando el asistente de instalacion <br><br>
+            # Ahora, el programa estará instalado en UBICACION_DE_LA_CARPETA_LINUX, podemos ejecutarlo con
+            <code>
+                wine UBICACION_DE_LA_CARPETA_LINUX/...(BUSCAR_LA_UBICACION_DEL_EJECUTABLE).../... NOMBRE_DEL_ARCHIVO.exe
+            </code>
+            Para ejecutar desde Lutris<br><br>
+            # Abrir Lutris y dar click en el simbolo de + ubicado en la esquina superior izquierda.<br>
+            En "Nombre" colocamos el nombre que queramos que tenga el juego y en "Ejecutador" seleccionamos Wine<br><br>
+            # En la pestaña "Opciones de juego", en "Ejecutable" le damos en examinar y buscamos dentro de UBICACION_DE_LA_CARPETA_LINUX
+            el archivo NOMBRE_DEL_ARCHIVO.exe o NOMBRE_DEL_ARCHIVO.lnk y lo seleccionamos.<br><br>
+            Es posible que para que algunos juegos se ejecuten correctamente, se debe personalizar la configuracion en la seccion de 
+            Opciones Avanzadas de las demás pestañas 
+        </div>
+    </article>
+    <footer class="space">
+        Source = <a href="https://www.youtube.com/watch?v=Mn2CzNCqdL4&">
+            https://www.youtube.com/watch?v=Mn2CzNCqdL4&
+        </a>
+    </footer>
+</body>
+</html>

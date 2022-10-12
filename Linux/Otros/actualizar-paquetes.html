@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../CSS/stlinux.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otros-menu.html">Otros</a> >
+            <a href="actualizar-paquetes.html">Actualizar paquetes</a>
+        </div>
+        <div id="titulo">Actualizar paquetes</div>
+        <div class="texto">
+            # Usar los comandos para actualizar paquetes
+            <code>
+                sudo apt-get update<br>
+                sudo apt-get upgrade<br>
+                sudo apt update<br>
+                sudo apt upgrade<br>
+                sudo apt update
+            </code>
+            # Es posible que salga un mensaje diciendo que hay paquetes no actualizados, para verlos usar
+            <code>
+                apt list --upgradable
+            </code>
+            # Nos saldra una lista de los paquetes no actualizados, para actualizarlos usar el siguiente comando con cada uno
+             de los nombres de los paquetes que queremos actualizar
+            <code>
+                sudo apt-get install --only-upgrade NOMBRE_DEL_PAQUETE
+            </code>
+            # Si sale otro error, probablemente es un error relacionado con las keys o los repositorios
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://askubuntu.com/questions/1181852/why-are-upgradable-packages-not-upgraded">
+            https://askubuntu.com/questions/1181852/why-are-upgradable-packages-not-upgraded
+        </a>
+    </footer>
+</body>
+</html>

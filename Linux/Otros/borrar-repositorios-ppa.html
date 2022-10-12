@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../CSS/stlinux.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otros-menu.html">Otros</a> >
+            <a href="borrar-repositorios-ppa.html">Borrar repositorios PPA</a>
+        </div>
+        <div id="titulo">Comandos importantes</div>
+        <div class="texto">
+            # Buscar el repositorio que queremos borrar en
+            <code>
+                cd /etc/apt/sources.list.d/
+            </code>
+            # Borrar el repositorio
+            <code>
+                rm -rf REPOSITORIO.list
+            </code> 
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://www.compuhoy.com/como-encuentro-mi-nombre-de-ppa-ubuntu/">
+            https://www.compuhoy.com/como-encuentro-mi-nombre-de-ppa-ubuntu/
+        </a>
+    </footer>
+</body>
+</html>

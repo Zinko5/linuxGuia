@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    color: #CECECE;
+    font-family: 'Rubik', 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: slateblue;
+    font-size: 24pt;
+    height: 65px;
+    display: flex;
+    padding-left: 15px;
+}
+#no-line {
+    text-decoration: none;
+}
+.titulo {
+    padding-top: 60px;
+    display: flex;
+    font-size: 22pt;
+}
+article {
+    height: 1130px;
+    background-color: darkred;
+}
+.texto {
+    padding: 65px 200px 10px 200px;
+    text-align: justify;
+    font-size: 14pt;
+}
+#solomenu {
+    padding: 50px 200px;
+    display: flex;
+    font-size: 14pt;
+}
+.directorio {
+    background-color: rgba(59, 47, 134, 0.877);
+    display: flex;
+    padding: 6px 200px;
+}
+.menu {
+    justify-content: space-between;
+}
+footer {
+    padding: 15px;
+    background-color: darkolivegreen;
+}
+.center {
+    align-items: center;
+}
+.middle {
+    justify-content: center;
+}
+a {
+    color: rgba(204, 247, 255, 0.781);
+    line-height : 16pt;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../CSS/stlinux.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacion-app-menu.html">Instalacion de Programas</a> >
+            <a href="photosohp.html">Photoshop</a>
+        </div>
+        <div id="titulo">Photoshop</div>
+        <div class="texto">
+            La carpeta "Linux-PhotoshopCC-v22" estara en la ubicacion en la que usaremos la terminal
+            (ej. "UBICACION_DE_LA_CARPETA")<br><br>
+            # Clone the repo
+            <code>
+                git clone https://github.com/YoungFellow-le/photoshop-22-linux.git<br>
+                cd photoshop-22-linux
+            </code>
+            # Run the main-menu file:
+            <code>./main-menu.sh</code>
+            # In the main menu, you will see these options: [Choose options 1-6 or 7 to exit]:<br><br>
+            # To install photoshop select option "1"<br><br>
+            # Install Camera Raw
+            <code>(y/n): y"</code>
+            # Do not install Vdk3d
+            <code>(y/n): n"</code>
+            # You can always install Vdk3d it afterwards by selecting option "4":<br><br>
+            # And to uninstall Vdk3d:
+            <code>"[Choose options 1-6 or 7 to exit]: 4</code>
+            # To uninstall Photoshop:
+            <code>"[Choose options 1-6 or 7 to exit]: 2</code>
+
+            # If you want to completely remove this installer, then delete the cloned folder after running the uninstaller.<br><br>
+            # Dentro de /home/gabo/photoshop-22-linux/Ps-prefix/drive_c/Program Files/Adobe hay que colocar la carpeta de Photoshop que usaremos y cambiarle el nombre a "Adobe Photoshop 2021"<br><br>
+            # Si no aparece un acceso directo al programa, podemos arrancalo con
+            <code>
+                bash -c '/UBICACION_DE_LA_CARPETA/photoshop-22-linux/scripts/launcher.sh'
+
+            </code>
+            # El codigo de arriba aparece tambien al finalizar la instalacion de Photoshop<br><br>
+            # En mi caso, el codigo es
+            <code>
+                bash -c '/home/gabo/photoshop-22-linux/scripts/launcher.sh'
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://github.com/YoungFellow-le/photoshop-22-linux">
+            https://github.com/YoungFellow-le/photoshop-22-linux
+        </a>
+    </footer>
+</body>
+</html>

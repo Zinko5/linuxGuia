@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../CSS/stlinux.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacion-app-menu.html">Instalacion de Programas</a> >
+            <a href="dotnet.html">Dotnet</a>
+        </div>
+        <div id="titulo">Instalar Dotnet SDK .NET 6.0</div>
+        <div class="texto">
+            # Instalar .NET 6
+            <code>
+                wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb<br>
+                sudo dpkg -i packages-microsoft-prod.deb<br>
+                rm packages-microsoft-prod.deb
+            </code>
+            # Crear un archivo para priorizar los repositorios PMC
+            <code>
+                sudo cat > /etc/apt/preferences<br>
+            </code>
+            # Colocar
+            <code>
+                Package: *<br>
+                Pin: origin "packages.microsoft.com"<br>
+                Pin-Priority: 1001<br>
+            </code>
+            # Presionar Ctrl + D para terminar<br><br>
+            # Instalar el SDK 6.0 de .NET
+            <code>
+                sudo apt update<br>
+                sudo apt install dotnet-sdk-6.0
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://github.com/dotnet/core/issues/7699">
+            https://github.com/dotnet/core/issues/7699
+        </a>
+    </footer>
+</body>
+</html>
