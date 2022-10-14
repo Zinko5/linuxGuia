@@ -9,7 +9,8 @@ header {
     font-size: 20pt;
 }
 article {
-    height: 1240px;
+    min-height: 800px;
+    max-height: 1460px;
     background-color: darkred;
 }
 footer {
@@ -24,7 +25,7 @@ footer {
     font-size: 10pt;
 }
 .texto {
-    padding: 20px 160px 20px 160px;
+    padding: 20px 160px 50px 160px;
 }
 #titulo {
     font-size: 20pt;

@@ -20,7 +20,7 @@
         <div id="titulo">Usar git con github</div>
         <div class="texto">
             # Primero es necesario tener git instalado y una cuenta en
-            <a href="https://github.com">github</a><br><br>
+            <a href="https://github.com" target="_blank">github</a><br><br>
             # Crear configuraciones globales para git en la computadora<br><br>
             # Identificarse
             <code>
@@ -35,7 +35,7 @@
             <code>
                 git config --global core.autocrlf input
             </code>
-            # Si queremos vincular el directorio con github con HTTPS, crear una clave <a href="https://github.com/settings/tokens">aqui</a>, copiarla y guardarla, ya que no
+            # Si queremos vincular el directorio con github con HTTPS, crear una clave <a href="https://github.com/settings/tokens" target="_blank">aqui</a>, copiarla y guardarla, ya que no
             se podra volver a ver<br><br>
             # Si queremos vincular el directorio con github con SSH, crear una llave con:
             <code>
@@ -45,12 +45,12 @@
             <code>
                 cat ~/.ssh/NombredelaClaveCreada.pub
             </code>
-            # Pegar <a href="https://github.com/settings/ssh/new">aqui</a> y poner un titulo que identifique el equipo que creo la llave, guardar<br><br>
+            # Pegar <a href="https://github.com/settings/ssh/new" target="_blank">aqui</a> y poner un titulo que identifique el equipo que creo la llave, guardar<br><br>
             # Ubicarnos en el directorio que deseamos usar como repositorio, ya
             sea seleccionando uno ya existente, creando uno nuevo o descargando uno de
             github (si lo hacemos, automaticamente se vinculara con HTTPS, pero podemos cambiarlo mas adelante) con: 
             <code>git clone https://direcciondelrepositorio.com</code>
-            # Si el directorio todavia no existe como repositorio en github, <a href="https://github.com/new">crearlo</a> y poner en la consola
+            # Si el directorio todavia no existe como repositorio en github, <a href="https://github.com/new" target="_blank">crearlo</a> y poner en la consola
             <code>
                 git init<br>
                 git branch -M main
@@ -69,14 +69,17 @@
             <code>
                 git remote set-url origin Sintaxisdeltipodeseadocomoarriba.git
             </code>
-            # Ahora podemos usar los comando git add, git commit - m "mensaje indicando los cambios en el proyecto" y git push en el directorio, si lo vinculamos con HTTPS, cada vez que queramos hacer un push nos pedira
+            # Ahora podemos usar los comando git add, git commit - m "mensaje indicando los cambios en el
+            proyecto", git push y git pull en el directorio<br><br>
+            # Si lo vinculamos con HTTPS, cada vez que queramos hacer un push nos pedira
             el nombre de usuario (de github) y la contraseña, que sera la llave que creamos antes
         </div>
     </article>
     <footer class="space">
-        source = <a href="https://youtu.be/VdGzPZ31ts8">
+        source = <a href="https://youtu.be/VdGzPZ31ts8" target="_blank">
             https://youtu.be/VdGzPZ31ts8 </a>
-        , <a href="https://stackoverflow.com/questions/42830557/git-remote-add-origin-vs-remote-set-url-origin">https://stackoverflow.com/questions/42830557/git-remote-add-origin-vs-remote-set-url-origin</a>
+        , <a href="https://stackoverflow.com/questions/42830557/git-remote-add-origin-vs-remote-set-url-origin" target="_blank">
+            https://stackoverflow.com/questions/42830557/git-remote-add-origin-vs-remote-set-url-origin</a>
     </footer>
 </body>
 </html>
