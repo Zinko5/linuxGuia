@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../CSS/stlinux.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otros-menu.html">Otros</a> >
+            <a href="cambiar-username.html">Cambiar username</a>
+        </div>
+        <div id="titulo">Cambiar username</div>
+        <div class="texto">
+            #  Cambiar el username y user's groupname, no se puede hacer logeado en el mismo usuario al que se le cambiara el username
+            <code>
+                sudo usermod -l NuevoUsername ViejoUsername<br>
+                sudo groupmod -n NuevoUsername ViejoUsername
+            </code>
+            # Renombrar al directorio de home
+            <code>
+                sudo usermod -d /home/NuevoUsername -m NuevoUsername
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://askubuntu.com/questions/34074/how-do-i-change-my-username">
+            https://askubuntu.com/questions/34074/how-do-i-change-my-username
+    </footer>
+</body>
+</html>

@@ -35,16 +35,48 @@
             <code>
                 git config --global core.autocrlf input
             </code>
+            # Si queremos vincular el directorio con github con HTTPS, crear una clave <a href="https://github.com/settings/tokens">aqui</a>, copiarla y guardarla, ya que no
+            se podra volver a ver<br><br>
+            # Si queremos vincular el directorio con github con SSH, crear una llave con:
+            <code>
+                ssh-keygen
+            </code>
+            # Copiar la llave copiando el resultado de: (Ctrl + shift + C para copiar en consola)
+            <code>
+                cat ~/.ssh/NombredelaClaveCreada.pub
+            </code>
+            # Pegar <a href="https://github.com/settings/ssh/new">aqui</a> y poner un titulo que identifique el equipo que creo la llave, guardar<br><br>
             # Ubicarnos en el directorio que deseamos usar como repositorio, ya
             sea seleccionando uno ya existente, creando uno nuevo o descargando uno de
             github con:
             <code>git clone https://direcciondelrepositorio.com</code>
-            # 
+            # Si el directorio todavia no existe como repositorio en github, <a href="https://github.com/new">crearlo</a> y poner en la consola
+            <code>
+                git init
+                git branch -M main
+            </code>
+            # Si queremos vincular el directorio con github con HTTPS:
+            <code>
+                git remote add origin https://github.com/TuUsuariodeGithub/NombredelRepositorio.git
+                git push -u origin main
+            </code>
+            # Si queremos vincular el directorio con github con SSH:
+            <code>
+                git remote add origin git@github.com:TuUsuariodeGithub/NombredelRepositorio.git
+                git push -u origin main
+            </code>
+            # Para cambiar el tipo de vinculacion, de HTTPS a SSH o viceversa
+            <code>
+                git remote set-url origin Sintaxisdeltipodeseadocomoarriba.git
+            </code>
+            # Ahora podemos usar los comando git add, git commit - m "mensaje indicando los cambios en el proyecto" y git push en el directorio, si lo vinculamos con HTTPS, cada vez que queramos hacer un push nos pedira
+            el nombre de usuario (de github) y la contraseña, que sera la llave que creamos antes
         </div>
     </article>
     <footer class="space">
         source = <a href="https://youtu.be/VdGzPZ31ts8">
-            https://youtu.be/VdGzPZ31ts8
+            https://youtu.be/VdGzPZ31ts8 </a>
+        , <a href="https://stackoverflow.com/questions/42830557/git-remote-add-origin-vs-remote-set-url-origin">https://stackoverflow.com/questions/42830557/git-remote-add-origin-vs-remote-set-url-origin</a>
     </footer>
 </body>
 </html>
