@@ -49,15 +49,15 @@
             </code>
             # Para instalar el paquete
             <code>
-                sudo flatpak install NombredelPaquete
+                flatpak install NombredelPaquete
             </code>
             # Para desinstalar un paquete
             <code>
-                sudo flatpak uninstall NombredelPaquete
+                flatpak uninstall NombredelPaquete
             </code>
             # Para actualizar los paquetes
             <code>
-                sudo flatpak update
+                flatpak update
             </code>
             # Para desinstalar un programa
             <div class="subtitulo">Snap</div>
@@ -82,14 +82,24 @@
             <br><br> # Se puede usar cualquiera de las alternativas, siendo mas recomendable descargar de repositorios
             y no del archivo .deb, porque este ultimo no se puede actualizar<br><br>
             # Los repositorios con los paquetes mas actualizados son preferibles, pero a veces presentan errores, la siguiente lista
-            dice de donde descargar paquetes de manera que esten actualizados y estables<br><br>
-            
-            Discord con apt<br>
-            Steam descargando el .deb de su pagina oficial<br>
-            Minecraft (TLauncher) descargando el .deb de su pagina oficial<br>
-            Lutris con flatpak<br>
-            RetroArch con apt<br>
-            Git con apt<br><br>
+            dice de donde descargar paquetes de manera que esten actualizados y estables<br>
+            <ul>
+                <li>Discord con apt (actualizaciones automaticamente sin repositorio PPA)</li>
+                <code>sudo apt install discord</code>
+                <li>RetroArch con apt</li>
+                <code>sudo add-apt-repository ppa:libretro/stable<br>sudo apt install retroarch</code>
+                <li>Git con apt</li>
+                <code>add-apt-repository ppa:git-core/ppa<br>sudo apt install git</code>
+                <li>Flatpak con apt (sin garantias del PPA)</li>
+                <code>sudo add-apt-repository ppa:flatpak/stable<br>sudo apt install flatpak</code>
+                <li>Lutris con flatpak</li>
+                <code>flatpak install flathub net.lutris.Lutris</code>
+                <li>Firefox por snap</li>
+                <code>sudo snap install firefox</code>
+                <li>Steam descargando el .deb de su <a href="https://store.steampowered.com/about/" target="_blank">pagina oficial</a> (actualizaciones automaticamente sin repositorio PPA)</li>
+                <li>Minecraft (TLauncher) descargando el .deb de su <a href="https://tlauncher.org/en/" target="_blank">pagina oficial</a></li>
+                <li>Visual Studio Code descargando el .deb se su <a href="https://code.visualstudio.com/download" target="_blank">pagina oficial</a></li>
+            </ul>
         </div>
     </article>
     <footer class="space">
