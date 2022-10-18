@@ -10,7 +10,7 @@ header {
 }
 article {
     min-height: 800px;
-    max-height: 1460px;
+    max-height: 5460px;
     background-color: darkred;
 }
 footer {
@@ -36,6 +36,11 @@ footer {
     font-size: 20pt;
     text-align: center;
     margin: 33pt auto 40pt auto;
+}
+.subtitulo {
+    font-size: 16pt;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 #solomenu {
     width: 70%;

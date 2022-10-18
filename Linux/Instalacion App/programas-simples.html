@@ -19,17 +19,77 @@
         </div>
         <div id="titulo">Lista de programas que se instalan facilmente</div>
         <div class="texto">
-            Visual Studio Code descargando el .deb de su pagina oficial<br>
-            Discord descargando el .deb de su pagina oficial<br>
-            Steam descargando el .deb de su pagina oficial<br>
-            Minecraft (TLauncher) descargando el .deb de su pagina oficial
-            Lutris con su repositorio apt<br>
-            RetroArch con su repositorio apt<br>
-            Git con su reporitorio apt<br><br>
-            # Para instalar los .deb 
+            # Con los repositorios de apt, flatpak y snap, los paquetes se actualizan automaticamente
+            <div class="subtitulo">Apt</div>
+            # Para ver si el paquete esta disponible
             <code>
-                sudo apt install ./NombredelPaquete.
+                apt search NombredelPaquete
             </code>
+            # Para instalar el paquete
+            <code>
+                sudo apt install NombredelPaquete
+            </code>
+            # Para desinstalar un paquete
+            <code>
+                sudo apt purge NombredelPaquete
+            </code>
+            # Para actualizar los paquetes
+            <code>
+                sudo apt update
+                sudo apt upgrade
+            </code>
+            # Elimina los archivos innecesarios
+            <code>
+                sudo apt autoremove
+            </code>
+            <div class="subtitulo">Flatpak</div>
+            # Para ver si el paquete esta disponible
+            <code>
+                flatpak search NombredelPaquete
+            </code>
+            # Para instalar el paquete
+            <code>
+                sudo flatpak install NombredelPaquete
+            </code>
+            # Para desinstalar un paquete
+            <code>
+                sudo flatpak uninstall NombredelPaquete
+            </code>
+            # Para actualizar los paquetes
+            <code>
+                sudo flatpak update
+            </code>
+            # Para desinstalar un programa
+            <div class="subtitulo">Snap</div>
+            # Para ver si el paquete (programa) esta disponible en los repositorios de snap
+            <code>
+                snap find NombredelPaquete
+            </code>
+            # Para instalar el paquete
+            <code>
+                sudo snap install NombredelPaquete
+            </code>
+            # Para desinstalar un paquete
+            <code>
+                sudo snap remove NombredelPaquete
+            </code>
+            # Los paquetes de snap se actualizan automaticamente<br><br><br>
+            # Si el paquete no esta disponible en ninguna de las opciones, se puede descargar el archivo .deb
+            <code>
+                wget https://Direccion/delaPagina/NombredelPaquete.deb<br>
+                sudo apt install ./NombredelPaquete.deb
+            </code>
+            <br><br> # Se puede usar cualquiera de las alternativas, siendo mas recomendable descargar de repositorios
+            y no del archivo .deb, porque este ultimo no se puede actualizar<br><br>
+            # Los repositorios con los paquetes mas actualizados son preferibles, pero a veces presentan errores, la siguiente lista
+            dice de donde descargar paquetes de manera que esten actualizados y estables<br><br>
+            
+            Discord con apt<br>
+            Steam descargando el .deb de su pagina oficial<br>
+            Minecraft (TLauncher) descargando el .deb de su pagina oficial<br>
+            Lutris con flatpak<br>
+            RetroArch con apt<br>
+            Git con apt<br><br>
         </div>
     </article>
     <footer class="space">

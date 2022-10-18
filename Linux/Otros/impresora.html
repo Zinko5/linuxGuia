@@ -15,14 +15,16 @@
         <div id="directorio">
             <a href="../index.html">Inicio</a> >
             <a href="otros-menu.html">Otros</a> >
-            <a href="comandos-importantes.html">Comandos Bash importantes</a>
+            <a href="impresora.html">Configurar una impresora</a>
         </div>
-        <div id="titulo">Comandos importantes</div>
+        <div id="titulo">Configurar una impresora</div>
         <div class="texto">
+            # Buscar los drivers de la impresora en <a href="https://www.openprinting.org/printers" target="_blank">open printing</a> y descargar el archivo .deb,
+            instalarlo con
             <code>
-                sudo<br>mkdir<br>cd<br>ls<br>touch<br>cat<br>rm<br>mv<br>apt<br>git<br>snap find NombredelPaquete<br>
-                flatpak search NombredelPaquete<br>apt search NombredelPaquete
+                sudo apt install ./NombredelDriver.deb
             </code>
+            # Si la impresora ya estaba instalada en el sistema, eliminarla desde las configuraciones de ubuntu y volver a instalarla
         </div>
     </article>
     <footer class="space">
