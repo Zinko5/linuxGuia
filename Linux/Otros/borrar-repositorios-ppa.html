@@ -19,9 +19,18 @@
         </div>
         <div id="titulo">Comandos importantes</div>
         <div class="texto">
-            # Buscar el repositorio que queremos borrar en
+            # Existen 2 maneras<br><br><br>
+            # 1. Buscar el nombre que queremos borrar con
             <code>
-                cd /etc/apt/sources.list.d/
+                ls /etc/apt/sources.list.d/
+            </code>
+            # Borrar el repositorio
+            <code>
+                rm /etc/apt/sources.list.d/NombredelRepositorio.list
+            </code><br>
+            # 2. Buscar el nombre que queremos borrar con
+            <code>
+                grep ^[^#] /etc/apt/sources.list /etc/apt/sources.list.d/*
             </code>
             # Borrar el repositorio
             <code>
@@ -30,8 +39,8 @@
         </div>
     </article>
     <footer class="space">
-        source = <a href="https://www.compuhoy.com/como-encuentro-mi-nombre-de-ppa-ubuntu/" target="_blank">
-            https://www.compuhoy.com/como-encuentro-mi-nombre-de-ppa-ubuntu/
+        source = <a href="https://esgeeks.com/como-listar-repositorios-linux/" target="_blank">
+            https://esgeeks.com/como-listar-repositorios-linux/
         </a>, <a href="https://www.mundodeportivo.com/urbantecno/linux/elimina-repositorios-ubuntu" target="_blank">
             https://www.mundodeportivo.com/urbantecno/linux/elimina-repositorios-ubuntu</a>
     </footer>

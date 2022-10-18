@@ -43,6 +43,12 @@
                 sudo apt autoremove
             </code>
             <div class="subtitulo">Flatpak</div>
+            # Instalar flatpak con
+            <code>
+                sudo add-apt-repository ppa:flatpak/stable<br>
+                sudo apt install flatpak<br>
+                flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+            </code>
             # Para ver si el paquete esta disponible
             <code>
                 flatpak search NombredelPaquete
@@ -86,19 +92,18 @@
             <ul>
                 <li>Discord con apt (actualizaciones automaticamente sin repositorio PPA)</li>
                 <code>sudo apt install discord</code>
-                <li>RetroArch con apt</li>
-                <code>sudo add-apt-repository ppa:libretro/stable<br>sudo apt install retroarch</code>
                 <li>Git con apt</li>
-                <code>add-apt-repository ppa:git-core/ppa<br>sudo apt install git</code>
-                <li>Flatpak con apt (sin garantias del PPA)</li>
-                <code>sudo add-apt-repository ppa:flatpak/stable<br>sudo apt install flatpak</code>
+                <code>sudo add-apt-repository ppa:git-core/ppa<br>sudo apt install git</code>
                 <li>Lutris con flatpak</li>
                 <code>flatpak install flathub net.lutris.Lutris</code>
+                <li>RetroArch con flatpak</li>
+                <code>flatpak install retroarch</code>
                 <li>Firefox por snap</li>
                 <code>sudo snap install firefox</code>
-                <li>Steam descargando el .deb de su <a href="https://store.steampowered.com/about/" target="_blank">pagina oficial</a> (actualizaciones automaticamente sin repositorio PPA)</li>
-                <li>Minecraft (TLauncher) descargando el .deb de su <a href="https://tlauncher.org/en/" target="_blank">pagina oficial</a></li>
-                <li>Visual Studio Code descargando el .deb se su <a href="https://code.visualstudio.com/download" target="_blank">pagina oficial</a></li>
+                <li>Steam descargando el .deb de su <a href="https://store.steampowered.com/about/" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
+                <li>Visual Studio Code descargando el .deb se su <a href="https://code.visualstudio.com/download" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
+                <li>Lutris (Para LoL) descarnago el .deb de su <a href="https://github.com/lutris/lutris/releases" target="_blank">repositorio en github</a> (sin actualizaciones automaticas)</li>
+                <li>Minecraft (TLauncher) descargando el .deb de su <a href="https://tlauncher.org/en/" target="_blank">pagina oficial</a> (sin actualizaciones automaticas)</li>
             </ul>
         </div>
     </article>
