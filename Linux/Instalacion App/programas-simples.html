@@ -47,8 +47,14 @@
             <code>
                 sudo add-apt-repository ppa:flatpak/stable<br>
                 sudo apt install flatpak<br>
-                flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
             </code>
+            # Agregar el remoto flathub en user, system o en los dos
+            <code>
+                flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo <br>
+                flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+            </code>
+            # Si agregemos los dos instalar un paquete, nos preguntara si instalar para user o para system. Usar system si queremos que el paquete 
+            este disponible para todos los usuarios en la computadora, sino usar user
             # Para ver si el paquete esta disponible
             <code>
                 flatpak search NombredelPaquete
@@ -65,7 +71,6 @@
             <code>
                 flatpak update
             </code>
-            # Para desinstalar un programa
             <div class="subtitulo">Snap</div>
             # Para ver si el paquete (programa) esta disponible en los repositorios de snap
             <code>
@@ -79,7 +84,11 @@
             <code>
                 sudo snap remove NombredelPaquete
             </code>
-            # Los paquetes de snap se actualizan automaticamente<br><br><br>
+            # Para actualizar un paquete
+            <code>
+                sudo snap refresh
+            </code>
+            <div class="subtitulo">Descarga directa</div>
             # Si el paquete no esta disponible en ninguna de las opciones, se puede descargar el archivo .deb
             <code>
                 wget https://Direccion/delaPagina/NombredelPaquete.deb<br>
@@ -105,7 +114,6 @@
                 <li>Steam descargando el .deb de su <a href="https://store.steampowered.com/about/" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
                 <li>Visual Studio Code descargando el .deb se su <a href="https://code.visualstudio.com/download" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
                 <li>Lutris (Para LoL) descarnago el .deb de su <a href="https://github.com/lutris/lutris/releases" target="_blank">repositorio en github</a> (sin actualizaciones automaticas)</li>
-                <li>Minecraft (TLauncher) descargando el .deb de su <a href="https://tlauncher.org/en/" target="_blank">pagina oficial</a> (sin actualizaciones automaticas)</li>
             </ul>
         </div>
     </article>
