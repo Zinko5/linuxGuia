@@ -9,12 +9,13 @@ header {
     font-size: 20pt;
 }
 article {
-    min-height: 858px;
+    min-height: 856px;
     max-height: 5460px;
     background-color: darkred;
 }
 footer {
     background-color: darkolivegreen;
+    height: 21px;
 }
 .space {
     padding: 15px;
@@ -75,6 +76,7 @@ a {
 }
 #no-line {
     text-decoration: none;
+    color: #CECECE;
 }
 code {
     font-family: 'Ubuntu Mono';
