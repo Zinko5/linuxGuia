@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    color: #CECECE;
+    background-color: #303030;
+    font-family: 'Rubik', 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: slateblue;
+    font-size: 20pt;
+}
+article {
+    min-height: 858px;
+    max-height: 5460px;
+    background-color: darkred;
+}
+footer {
+    background-color: darkolivegreen;
+}
+.space {
+    padding: 15px;
+}
+#directorio {
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 10pt;
+}
+.directorio {
+    background-color: rgba(59, 47, 134, 0.877);
+    display: flex;
+    padding: 6px 200px;
+}
+.texto {
+    padding: 20px 160px 50px 160px;
+}
+.solotexto {
+    padding: 30px 200px 10px 200px;
+    text-align: justify;
+    font-size: 14pt;
+}
+#titulo {
+    font-size: 20pt;
+    text-align: center;
+    margin: 20pt auto 40pt auto;
+}
+#tituloindex {
+    font-size: 22pt;
+    text-align: center;
+    margin: 33pt auto 40pt auto;
+}
+.subtitulo {
+    font-size: 16pt;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+#solomenu {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+#menus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22pt;
+}
+.menu {
+    justify-content: space-between;
+}
+ul {
+    padding-left: 5pt;
+}
+a {
+    color: rgba(204, 247, 255, 0.781);
+    line-height : 16pt;
+}
+#no-line {
+    text-decoration: none;
+}
+code {
+    font-family: 'Ubuntu Mono';
+    padding: 10px;
+    display: block;
+    background-color:rgba(6, 41, 41, 0.493);
+    margin: 10px 0px;
+}
