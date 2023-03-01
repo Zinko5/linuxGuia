@@ -22,12 +22,6 @@
             <div class="subtitulo">
                 C# (.NET 6.0.4xx)
             </div>
-            # Opcion 1:
-            <code>
-                sudo apt install dotnet6
-            </code>
-            <br>
-            # Opcion 2:
             <code>
                 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb<br>
                 sudo dpkg -i packages-microsoft-prod.deb<br>
@@ -35,9 +29,9 @@
             </code>
             # Crear un archivo para priorizar los repositorios PMC
             <code>
-                touch /etc/apt/preferences<br>
-                cd /etc/apt
-                nano preferences
+                sudo touch /etc/apt/preferences<br>
+                cd /etc/apt<br>
+                sudo nano preferences
             </code>
             # pegar con Ctrl + Shift + V
             <code>
