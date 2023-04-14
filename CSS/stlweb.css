@@ -29,6 +29,7 @@ footer {
     background-color: rgba(59, 47, 134, 0.877);
     display: flex;
     padding: 6px 200px;
+    text-align: center;
 }
 .texto {
     padding: 20px 160px 50px 160px;
