@@ -5,16 +5,16 @@ body {
     font-family: 'Rubik', 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: slateblue;
+    background-color: #393E46;
     font-size: 20pt;
 }
 article {
     min-height: 856px;
     max-height: 5460px;
-    background-color: darkred;
+    background-color: #222831;
 }
 footer {
-    background-color: darkolivegreen;
+    background-color: #393E46;
     height: 21px;
 }
 .space {
@@ -72,7 +72,7 @@ ul {
     padding-left: 5pt;
 }
 a {
-    color: rgba(204, 247, 255, 0.781);
+    color: #00ADB5;
     line-height : 16pt;
 }
 #no-line {
@@ -83,6 +83,6 @@ code {
     font-family: 'Ubuntu Mono';
     padding: 10px;
     display: block;
-    background-color:rgba(6, 41, 41, 0.493);
+    background-color:#393E46;
     margin: 10px 0px;
 }
