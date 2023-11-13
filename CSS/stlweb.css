@@ -1,29 +1,43 @@
+/* Comentar: Ctrl + Shift + A
+Borrar: Ctrl + x */
 body {
+    display: flex;
+    min-height: min-content;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     color: #CECECE;
-    background-color: #303030;
+    background-color: #222831;
     font-family: 'Rubik', 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 header {
+    display: flex;
     background-color: #393E46;
     font-size: 20pt;
 }
 article {
-    min-height: 856px;
-    max-height: 5460px;
-    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 800px;
+    max-height: 5460px;*/
 }
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
     background-color: #393E46;
-    height: 21px;
+    min-height: 21px;
+    max-height: 7%;
 }
 .space {
     padding: 15px;
 }
 #directorio {
-    padding-top: 15px;
-    padding-left: 30px;
+    display: flex;
+    padding: 10px 30px;
     font-size: 10pt;
+    align-items: center;
+    gap: 5px;
 }
 .directorio {
     background-color: rgba(59, 47, 134, 0.877);
@@ -32,7 +46,7 @@ footer {
     text-align: center;
 }
 .texto {
-    padding: 20px 160px 50px 160px;
+    padding: 3% 20%;
 }
 .solotexto {
     padding: 30px 200px 10px 200px;
@@ -40,9 +54,10 @@ footer {
     font-size: 14pt;
 }
 #titulo {
+    padding: 20px 0px;
+    display: flex;
     font-size: 20pt;
-    text-align: center;
-    margin: 20pt auto 40pt auto;
+    justify-content: center;
 }
 #tituloindex {
     font-size: 22pt;
@@ -54,16 +69,21 @@ footer {
     margin-top: 14px;
     margin-bottom: 14px;
 }
-#solomenu {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-}
 #menus {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 22pt;
+    gap: 10%;
+    padding: 40px 22%;
+}
+.menus{
+    /* background-color: coral; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 25%;
+    margin-bottom: 10%;
 }
 .menu {
     justify-content: space-between;
@@ -72,6 +92,7 @@ ul {
     padding-left: 5pt;
 }
 a {
+    display: flex;
     color: #00ADB5;
     line-height : 16pt;
 }
@@ -80,6 +101,8 @@ a {
     color: #CECECE;
 }
 code {
+    overflow: auto;
+    white-space: nowrap;
     font-family: 'Ubuntu Mono';
     padding: 10px;
     display: block;
