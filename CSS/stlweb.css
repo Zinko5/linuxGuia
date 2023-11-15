@@ -73,7 +73,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10%;
+    gap: 50px;
     padding: 40px 22%;
 }
 .menus{
