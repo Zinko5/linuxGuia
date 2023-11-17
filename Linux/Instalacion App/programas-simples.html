@@ -20,6 +20,18 @@
         <div id="titulo">Lista de programas que se instalan facilmente</div>
         <div class="texto">
             # Con los repositorios de apt, flatpak y snap, los paquetes se actualizan automaticamente
+            <div class="subtitulo">Configuracion de Repositorios</div>
+            # Modificar archivo de repositorios
+            <code>
+                sudo nano /etc/apt/sources.list 
+            </code>
+            # Pegar el siguiente texto en la ultima linea, pegar con Ctrl + Shift + V 
+            <code>deb http://deb.debian.org/debian bullseye main contrib non-free</code>
+            # Guardar los cambios con Ctrl + X, despues presionar S, despues Enter <br><br>
+            # Habilitar la arquitectura de 32 bits
+            <code>
+                sudo dpkg --add-architecture i386
+            </code>
             <div class="subtitulo">Apt</div>
             # Para ver si el paquete esta disponible
             <code>
@@ -71,23 +83,6 @@
             <code>
                 flatpak update
             </code>
-            <div class="subtitulo">Snap</div>
-            # Para ver si el paquete (programa) esta disponible en los repositorios de snap
-            <code>
-                snap find NombredelPaquete
-            </code>
-            # Para instalar el paquete
-            <code>
-                sudo snap install NombredelPaquete
-            </code>
-            # Para desinstalar un paquete
-            <code>
-                sudo snap remove NombredelPaquete
-            </code>
-            # Para actualizar un paquete
-            <code>
-                sudo snap refresh
-            </code>
             <div class="subtitulo">Descarga directa</div>
             # Si el paquete no esta disponible en ninguna de las opciones, se puede descargar el archivo .deb
             <code>
@@ -107,8 +102,6 @@
                 <code>flatpak install Spotify</code>
                 <li>RetroArch con flatpak</li>
                 <code>flatpak install retroarch</code>
-                <li>Firefox por snap</li>
-                <code>sudo snap install firefox</code>
                 <li>Discord descargando el .deb de su <a href="https://discord.com/download" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
                 <li>Steam descargando el .deb de su <a href="https://store.steampowered.com/about/" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
                 <li>Visual Studio Code descargando el .deb se su <a href="https://code.visualstudio.com/download" target="_blank">pagina oficial</a> (actualizaciones automaticas sin repositorio PPA)</li>
@@ -117,7 +110,9 @@
         </div>
     </article>
     <footer class="space">
-        pie
+        source = <a href="https://www.reddit.com/r/linuxquestions/comments/wxzeun/im_having_trouble_with_installing_winetricks_on/" target="_blank">
+            https://www.reddit.com/r/linuxquestions/comments/wxzeun/im_having_trouble_with_installing_winetricks_on/
+        </a>
     </footer>
 </body>
 </html>
