@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacionAppMenu.html">Instalacion de Programas</a> >
+            <a href="opera.html">Opera</a>
+        </div>
+        <div id="titulo">Opera</div>
+        <div class="texto">
+            <div class="subtitulo">Instalar opera</div>
+            # Descargar opera desde <a href="https://www.opera.com/es/download" target="_blank">su página oficial</a> <br><br>
+            # Instalarlo
+            <code>
+                sudo apt install ./Descargas/nombreDelPaqueteDeOpera.deb
+            </code>
+
+            <div class="subtitulo">Cambiar idioma</div>
+            # En una terminal, buscar el lanzador de opera
+            <code>cd /usr/share/applications</code>
+            # Editarlo
+            <code>sudo nano opera.desktop</code>
+            # En la parte de 
+            <code>Exec=opera %U</code>
+            # Reemplazar por
+            <code>Exec=opera --lang="es-mx" %U</code> 
+
+            <div class="subtitulo">Instalar el componente libffmpeg.so para reproducir videos</div>
+            # En opera, abrir la pestaña "Acerca de" buscando el URL opera://about o con el boton en la esquina superior izquierda seleccionar "Ayuda -> Acerca de Opera" <br><br>
+            # En la sección "Identificacion del Navegador" fijarse en los números que siguen a "Chrome/" ej: "Chrome/116"<br><br>
+            # Buscar <a href="https://onedrive.live.com/?authkey=%21AC7ddalBsUiWsUE&id=75D48EF8D3750510%21234&cid=75D48EF8D3750510" target="_blank">aquí</a> 
+            la carpeta con los números que encontramos y descargar el archivo libffmpeg.so que está dentro de ella <br><br>
+            # Nuevamente en "Acerca de" en la sección "Rutas" copiar la direccion de Instalar (ej: /usr/lib/x86_64-linux-gnu/opera) <br><br>
+            # En una terminal, abrir la direccion obtenida
+            <code>
+                cd /direccionObtenida
+            </code>
+            # Crear una carpeta
+            <code>
+                sudo mkdir lib_extra
+            </code>
+            # y mover el archivo libffmpeg.so a la carpeta creada
+            <code>
+                sudo mv /direccionDelArchivo/libffmpeg.so lib_extra
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://forums.opera.com/topic/60477/cambiar-idioma/18?_=1694541107039" target="_blank">https://forums.opera.com/topic/60477/cambiar-idioma/18?_=1694541107039
+        </a>, <a href="https://www.reddit.com/r/operabrowser/wiki/opera/linux_libffmpeg_config/" target="_blank">
+            https://www.reddit.com/r/operabrowser/wiki/opera/linux_libffmpeg_config/
+        </a>
+    </footer>
+</body>
+</html>

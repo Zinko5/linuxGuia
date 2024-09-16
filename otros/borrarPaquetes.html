@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otrosMenu.html">Otros</a> >
+            <a href="borrarPaquetes.html">Borrar paquetes</a>
+        </div>
+        <div id="titulo">Borrar paquetes</div>
+        <div class="texto">
+            # Si es un paquete o dependecia del sistema, buscar con:
+            <code>
+                apt list --installed
+            </code>
+            # Si es un paquete que fue instalado manualmente, buscar con:
+            <code>
+                apt-mark showmanual
+            </code>
+            # Borrar el paquete
+            <code>
+                sudo apt purge NombredelPaquete
+            </code> 
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://askubuntu.com/questions/17823/how-to-list-all-installed-packages" target="_blank">
+            https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
+        </a>
+    </footer>
+</body>
+</html>

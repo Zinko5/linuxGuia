@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacionAppMenu.html">Instalacion de Programas</a> >
+            <a href="spotify.html">Spotify</a>
+        </div>
+        <div id="titulo">Spotify</div>
+        <div class="texto">
+            # Primero, instalar Spotify por snapstore
+            <code>
+                curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo gpg --dearmor -o /usr/share/keyrings/spotify-archive-keyring.gpg<br><br>
+                echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/spotify-archive-keyring.gpg] http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list<br><br>
+                sudo apt update && sudo apt install spotify-client
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://community.spotify.com/t5/Desktop-Linux/New-install-instructions-for-Debian-Ubuntu/td-p/5228160" target="_blank">
+            https://community.spotify.com/t5/Desktop-Linux/New-install-instructions-for-Debian-Ubuntu/td-p/5228160
+        </a>
+    </footer>
+</body>
+</html>
