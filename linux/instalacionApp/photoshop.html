@@ -1,0 +1,40 @@
+<!-- No funciona -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacionAppMenu.html">Instalacion de Programas</a> >
+            <a href="photosohp.html">Photoshop</a>
+        </div>
+        <div id="titulo">Photoshop</div>
+        <div class="texto">
+            # Clonar el repositorio
+            <code>
+                git clone https://github.com/LinSoftWin/Photoshop-CC2022-Linux<br>
+                cd Photoshop-CC2022-Linux/
+            </code>
+            # Especificar la carpeta en la que se instalara Photoshop, recomendado: ~/.local/share/Photoshop/
+            <code>
+                sudo sh scripts/photoshop2021install.sh ~/.local/share/Photoshop/
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://github.com/LinSoftWin/Photoshop-CC2022-Linux" target="_blank">
+            https://github.com/LinSoftWin/Photoshop-CC2022-Linux
+        </a>
+    </footer>
+</body>
+</html>

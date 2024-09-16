@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="instalacionAppMenu.html">Instalacion de Programas</a> >
+            <a href="lol.html">League of Legends</a>
+        </div>
+        <div id="titulo">League of Legends</div>
+        <div class="texto">
+            # Es necesario <a href="wine.html"> instalar wine</a> <br><br>
+            # Clonar el repositorio
+            <code>
+                git clone https://github.com/kyechou/leagueoflegends<br>
+                cd leagueoflegends
+            </code>
+            # Instalar paquete tu distribucion
+            <code>
+                sudo ./package.sh debian
+                sudo dpkg -i leagueoflegends_13.7.2_any.deb 
+            </code>
+            # Instalar league of legens
+            <code>
+                sudo leagueoflegends install
+            </code>
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://github.com/kyechou/leagueoflegends" target="_blank">
+            https://github.com/kyechou/leagueoflegends
+        </a>
+    </footer>
+</body>
+</html>

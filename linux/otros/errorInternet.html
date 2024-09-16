@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otrosMenu.html">Otros</a> >
+            <a href="errorInternet.html">No se conecta a internet</a>
+        </div>
+        <div id="titulo">No se conecta a internet</div>
+        <div class="texto">
+            # Las interfaces son las conexiones a internet que tenemos, pueden ser por wifi o por ethernet <br><br>
+            # Para listar las interfaces
+            <code>
+                ls /sys/class/net
+            </code>
+            # Siempre existe una interface 'lo', el resto son nuestras conexiones <br><br>
+            # Editar la configuracion de las interfaces
+            <code>
+                sudo nano /etc/network/interfaces
+            </code>
+            # Comentar las lineas que digan 'iface NOMBRECONEXION inet...' <br><br>
+            # Para comentar una linea, simplemente poner '#' al inicio de esta
+        </div>
+    </article>
+    <footer class="space">
+        Pie de pagina
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../../css/stlweb.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otrosMenu.html">Otros</a> >
+            <a href="borrarRepositoriosPpa.html">Borrar repositorios PPA</a>
+        </div>
+        <div id="titulo">Comandos importantes</div>
+        <div class="texto">
+            # Existen 2 maneras<br><br><br>
+            # 1. Buscar el nombre que queremos borrar con
+            <code>
+                ls /etc/apt/sources.list.d/
+            </code>
+            # Borrar el repositorio
+            <code>
+                rm /etc/apt/sources.list.d/NombredelRepositorio.list
+            </code><br>
+            # 2. Buscar el nombre que queremos borrar con
+            <code>
+                grep ^[^#] /etc/apt/sources.list /etc/apt/sources.list.d/*
+            </code>
+            # Borrar el repositorio
+            <code>
+                sudo add-apt-repository --remove ppa:NombredelRepositorio
+            </code> 
+        </div>
+    </article>
+    <footer class="space">
+        source = <a href="https://esgeeks.com/como-listar-repositorios-linux/" target="_blank">
+            https://esgeeks.com/como-listar-repositorios-linux/
+        </a>, <a href="https://www.mundodeportivo.com/urbantecno/linux/elimina-repositorios-ubuntu" target="_blank">
+            https://www.mundodeportivo.com/urbantecno/linux/elimina-repositorios-ubuntu</a>
+    </footer>
+</body>
+</html>
