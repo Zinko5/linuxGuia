@@ -24,28 +24,28 @@
             Para instalar programas o juegos nativos de Windows en Linux, primero necesitamos Wine, tambien
             Lutris es util para ordenarlos y arrancarlos<br><br>
             Primero debemos descargar los archivos del programa Windows y despues seleccionar o crear el directorio donde queremos 
-            que este el programa en Linux (ej. "~/.local/share/NombrePrograma")<br><br>
+            que este el programa en Linux (ej. "~/Games/NombrePrograma")<br><br>
             # Crear directorio
             <code>
-                mkdir ~/.local/share/NombrePrograma
+                mkdir ~/Games/NombrePrograma
             </code>
             # Crear prefix
             <code>
-                WINEPREFIX="~/.local/share/NombrePrograma" wine wineboot
+                WINEPREFIX="~/Games/NombrePrograma" wine wineboot
             </code>
             # Abrir una terminal en la carpeta en donde están los archivos Windows del programa y poner
             <code>
-                WINEPREFIX="~/.local/share/NombrePrograma" wine NombreArchivo.exe
+                WINEPREFIX="~/Games/NombrePrograma" wine NombreArchivo.exe
             </code>
             # Instalar el programa usando el asistente de instalacion <br><br>
-            # Ahora, el programa estará instalado en ~/.local/share/NombrePrograma, podemos ejecutarlo con
+            # Ahora, el programa estará instalado en ~/Games/NombrePrograma, podemos ejecutarlo con
             <code>
-                wine ~/.local/share/NombrePrograma/...(BUSCAR_LA_UBICACION_DEL_EJECUTABLE).../... NombreArchivo.exe
+                wine ~/Games/NombrePrograma/...(BUSCAR_LA_UBICACION_DEL_EJECUTABLE).../... NombreArchivo.exe
             </code>
             Para ejecutar desde Lutris<br><br>
             # Abrir Lutris y dar click en el simbolo de + ubicado en la esquina superior izquierda.<br>
             En "Nombre" colocamos el nombre que queramos que tenga el juego y en "Ejecutador" seleccionamos Wine<br><br>
-            # En la pestaña "Opciones de juego", en "Ejecutable" le damos en examinar y buscamos dentro de ~/.local/share/NombrePrograma
+            # En la pestaña "Opciones de juego", en "Ejecutable" le damos en examinar y buscamos dentro de ~/Games/NombrePrograma
             el archivo NombreArchivo.exe o NombreArchivo.lnk y lo seleccionamos.<br><br>
             Es posible que para que algunos juegos se ejecuten correctamente, se debe personalizar la configuracion en la seccion de 
             Opciones Avanzadas de las demás pestañas 
