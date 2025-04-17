@@ -111,13 +111,6 @@
         pedira el nombre de usuario (de github) y la contraseña, que sera la
         llave que creamos antes <br /><br />
 
-        # Ahora podemos usar los comando git add, git commit - m "mensaje
-        indicando los cambios en el proyecto", git push, git pull, git branch y
-        git checkout en el directorio<br /><br />
-
-        # Tomar en cuenta que no se mostrara nada al ejecutar "git branch" hasta
-        que no se haga el primer push, que es cuando se creara la primera rama
-
         <!-- <div class="subtitulo">Crear repositorio</div>
 
             # Si el directorio todavia no existe como repositorio en github, <a href="https://github.com/new" target="_blank">crearlo</a> y poner en la consola
@@ -136,6 +129,42 @@
                 git remote add origin git@github.com:TuUsuariodeGithub/NombredelRepositorio.git<br>
                 git push -u origin main
             </code> -->
+            # Ahora podemos usar los comando git add, git commit - m "mensaje
+            indicando los cambios en el proyecto", git push, git pull, git branch y
+            git checkout en el directorio
+
+        <div class="subtitulo">Comandos de git</div>
+        
+        # Muestra el estado actual del repositorio, archivos modificados, nuevos o eliminados
+        <code>git status</code>
+
+        # Agrega un archivo específico al área de preparación (staging)
+        <code>git add</code>
+
+        # Agrega todos los archivos modificados al área de preparación
+        <code>git add .</code>
+
+        # Crea un nuevo commit con los cambios en el área de preparación
+        <code>git commit -m "mensaje indicando los cambios en el proyecto"</code>
+
+        # Sube los commits locales al repositorio remoto
+        <code>git push</code>
+
+        # Descarga y fusiona los cambios del repositorio remoto
+        <code>git pull</code>
+
+        # Muestra todas las ramas del repositorio
+        <code>git branch</code>
+
+        # Cambia a una rama existente
+        <code>git checkout nombreDeLaRama</code>
+
+        # Crea una nueva rama y cambia a ella
+        <code>git checkout -b nombreDeLaRama</code>
+
+        # Sube una rama específica al repositorio remoto
+        <code>git push origin nombre-branch</code>
+        # Tomar en cuenta que no se mostrara nada al ejecutar "git branch" hasta que no se haga el primer push, que es cuando se creara la primera rama <br><br>
       </div>
     </article>
     <footer class="space">
