@@ -63,7 +63,8 @@
             <code>ls /etc/init.d/</code>
 
             Verificar si un servicio está habilitado para iniciar automáticamente
-            <code>sudo systemctl is-enabled nombreServicio</code>
+            <code>ls /etc/rc*.d/*nombreServicio</code>
+            *Si no se encuentran archivos, el servicio no está habilitado para iniciar automáticamente <br><br>
 
             Verificar si un servicio está corriendo
             <code>sudo service nombreServicio status</code>
