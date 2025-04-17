@@ -7,6 +7,42 @@
     <title>Linux</title>
     <link rel="stylesheet" href="../css/stlweb.css">
 </head>
+<script>
+    function copyToClipboard(button) {
+        const codeBlock = button.previousElementSibling;
+        const text = codeBlock.textContent.trim();
+        
+        navigator.clipboard.writeText(text).then(() => {
+            // Visual feedback
+            button.classList.add('copied');
+            setTimeout(() => {
+                button.classList.remove('copied');
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy:', err);
+        });
+    }
+
+    // Wrap all code blocks with container and add copy button
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('code').forEach(codeBlock => {
+            const container = document.createElement('div');
+            container.className = 'code-container';
+            
+            // Move the code block into the container
+            codeBlock.parentNode.insertBefore(container, codeBlock);
+            container.appendChild(codeBlock);
+            
+            // Add the copy button
+            const copyButton = document.createElement('button');
+            copyButton.className = 'copy-btn';
+            copyButton.setAttribute('aria-label', 'Copy code');
+            copyButton.onclick = function() { copyToClipboard(this); };
+            container.appendChild(copyButton);
+        });
+    });
+</script>
+
 <body>
     <header class="space">
         Guia de Linux
@@ -33,9 +69,9 @@
             </code>
             # Existe manera mas manual y *oficial* de instalar wine, pero puede presentar errores, ver 
             <a href="https://wiki.winehq.org/Ubuntu" target="_blank">Guia oficial</a> 
-            <div class="subtitulo">Wine para lol</div>
+            <!-- <div class="subtitulo">Wine para lol</div>
             # Ademas de todo lo de arriba, se debe instalar wine-lol
-            <code></code>
+            <code></code> -->
         </div>
     </article>
     <footer class="space">

@@ -51,24 +51,46 @@
         <div id="directorio">
             <a href="../index.html">Inicio</a> >
             <a href="otrosMenu.html">Otros</a> >
-            <a href="cambiarUsername.html">Cambiar username</a>
+            <a href="comandosBasicos.html">Comandos Bash básicos</a>
         </div>
-        <div id="titulo">Cambiar username</div>
+        <div id="titulo">Comandos básicos</div>
+        <!-- ... existing code until div class="texto" ... -->
         <div class="texto">
-            #  Cambiar el username y user's groupname, no se puede hacer logeado en el mismo usuario al que se le cambiara el username
-            <code>
-                sudo usermod -l NuevoUsername ViejoUsername<br>
-                sudo groupmod -n NuevoUsername ViejoUsername
-            </code>
-            # Renombrar al directorio de home
-            <code>
-                sudo usermod -d /home/NuevoUsername -m NuevoUsername
-            </code>
+            <!-- ... existing code until div class="texto" ... -->
+        <div class="texto">
+            Ver servicios y su estado (estado no confiable)
+            <code>service --status-all</code>
+
+            Ver servicios sin su estado
+            <code>ls /etc/init.d/</code>
+
+            Verificar si un servicio está habilitado para iniciar automáticamente
+            <code>sudo systemctl is-enabled nombreServicio</code>
+
+            Verificar si un servicio está corriendo
+            <code>sudo service nombreServicio status</code>
+
+            Iniciar un servicio
+            <code>sudo service nombreServicio start</code>
+
+            Detener un servicio
+            <code>sudo service nombreServicio stop</code>
+
+            Habilitar el inicio automático de un servicio
+            <code>sudo update-rc.d nombreServicio defaults</code>
+
+            Deshabilitar el inicio automático de un servicio
+            <code>sudo update-rc.d nombreServicio remove</code>
+
+            Listar los servicios corriendo y su puerto
+            <code>sudo ss -tulnp</code>
         </div>
+<!-- ... rest of existing code ... -->
+        </div>
+<!-- ... rest of existing code ... -->
     </article>
     <footer class="space">
-        source = <a href="https://askubuntu.com/questions/34074/how-do-i-change-my-username" target="_blank">
-            https://askubuntu.com/questions/34074/how-do-i-change-my-username
+        pie
     </footer>
 </body>
 </html>

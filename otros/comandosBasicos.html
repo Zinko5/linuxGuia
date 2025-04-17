@@ -51,24 +51,62 @@
         <div id="directorio">
             <a href="../index.html">Inicio</a> >
             <a href="otrosMenu.html">Otros</a> >
-            <a href="cambiarUsername.html">Cambiar username</a>
+            <a href="comandosBasicos.html">Comandos Bash básicos</a>
         </div>
-        <div id="titulo">Cambiar username</div>
+        <div id="titulo">Comandos básicos</div>
+        <!-- ... existing code until div class="texto" ... -->
         <div class="texto">
-            #  Cambiar el username y user's groupname, no se puede hacer logeado en el mismo usuario al que se le cambiara el username
-            <code>
-                sudo usermod -l NuevoUsername ViejoUsername<br>
-                sudo groupmod -n NuevoUsername ViejoUsername
-            </code>
-            # Renombrar al directorio de home
-            <code>
-                sudo usermod -d /home/NuevoUsername -m NuevoUsername
-            </code>
+            Ejecutar comandos con privilegios de administrador
+            <code>sudo</code>
+
+            Crear un nuevo directorio
+            <code>mkdir</code>
+
+            Cambiar de directorio
+            <code>cd</code>
+
+            Listar archivos y directorios
+            <code>ls</code>
+
+            Crear un archivo vacío
+            <code>touch</code>
+
+            Mostrar el contenido de un archivo
+            <code>cat</code>
+
+            Eliminar archivos o directorios
+            <code>rm</code>
+
+            Mover o renombrar archivos y directorios
+            <code>mv</code>
+
+            Gestor de paquetes principal de Debian/Ubuntu
+            <code>apt</code>
+
+            Sistema de control de versiones
+            <code>git</code>
+
+            Buscar paquetes disponibles en Snap Store
+            <code>snap find NombredelPaquete</code>
+
+            Buscar paquetes disponibles en Flatpak
+            <code>flatpak search NombredelPaquete</code>
+
+            Buscar paquetes disponibles en los repositorios APT
+            <code>apt search NombredelPaquete</code>
+
+            Crear un entorno virtual python venv
+            <code>python3 -m venv nombre_del_entorno</code>
+            
+            Usar el entorno virtual python venv
+            <code>source nombre_del_entorno\bin\activate</code>
+            
+            Salir del entorno virtual python venv
+            <code>deactivate</code>
         </div>
     </article>
     <footer class="space">
-        source = <a href="https://askubuntu.com/questions/34074/how-do-i-change-my-username" target="_blank">
-            https://askubuntu.com/questions/34074/how-do-i-change-my-username
+        pie
     </footer>
 </body>
 </html>

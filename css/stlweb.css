@@ -109,3 +109,57 @@ code {
     background-color:#393E46;
     margin: 10px 0px;
 }
+
+/* ... existing code ... */
+
+code {
+    overflow: auto;
+    white-space: nowrap;
+    font-family: 'Ubuntu Mono';
+    padding: 10px;
+    display: block;
+    background-color:#393E46;
+    margin: 10px 0px;
+    position: relative; /* Add this for absolute positioning of the button */
+}
+
+.code-container {
+    position: relative;
+    width: 100%;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #00ADB5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-btn:hover {
+    opacity: 1;
+    background-color: #00858c;
+}
+
+.copy-btn::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23CECECE'%3E%3Cpath d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.copy-btn.copied::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23CECECE'%3E%3Cpath d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'/%3E%3C/svg%3E");
+}
