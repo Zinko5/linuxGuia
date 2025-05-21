@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header class="space">
+        Guia de Linux
+    </header>
+    
+    
+    <article>
+        <div id="directorio">
+            <a href="../index.html">Inicio</a> >
+            <a href="otrosMenu.html">Otros</a> >
+            <a href="comandosDocker.html">Comandos para Docker</a>
+        </div>
+        <div id="titulo">Comandos para Docker</div>
+        <div class="texto">
+            Iniciar docker
+            <code>sudo service docker start</code>
+
+            Ver las imagenes en el Sistema
+            <code>sudo docker images</code>
+
+            Ver contenedores activos
+            <code>sudo docker ps</code>
+
+            Ver contenedores activos e inactivos
+            <code>sudo docker ps -a</code>
+
+            Iniciar un contenedor
+            <code>sudo docker start nombreOIdContenedor</code>
+
+            Detener un contenedor
+            <code>sudo docker start nombreOIdContenedor</code>
+
+            Verificar si un contenedor está habilitado para iniciar automáticamente
+            <code>sudo docker inspect -f '{{.HostConfig.RestartPolicy.Name}}' nombreOIdContenedor</code>
+            *Si el resultado es always o "unless-stopped", el contenedor está habilitado para iniciar automáticamente, si es "no" o "on-failure", no está habilitado<br><br>
+
+            Habilitar el inicio automático de un contenedor
+            <code>sudo docker update --restart always nombreOIdContenedor</code>
+
+            Deshabilitar el inicio automático de un servicio
+            <code>sudo docker update --restart no nombreOIdContenedor</code>
+
+            Descargar una imagen
+            <code>sudo docker pull nombreImagen:tag</code>
+            *Se pueden encontrar las imágenes y tags en dockerhub, si no se especifíca un tag (versión), se usará latest por defecto <br><br>
+
+            Crear un contenedor a partir de una imagen descargada
+            <code>sudo docker run -d --name nombreDelContenedor nombreImagen:tag</code>
+
+            Ejecutar un comando en un contenedor en ejecución
+            <code>sudo docker exec -it nombreDelContenedor comandoAEjecutar</code>
+        </div>
+    </article>
+    <footer class="space">
+        pie
+    </footer>
+<script src="../static/script.js"></script>
+</body>
+</html>
